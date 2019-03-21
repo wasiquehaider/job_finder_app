@@ -14,7 +14,7 @@ import ReviewScreen from "./screens/ReviewScreen";
 
 export default class App extends Component {
   render() {
-    const MainNavigator = createBottomTabNavigator({
+    const MainNavigator = createSwitchNavigator({
       welcome: { screen: WelcomeScreen },
       auth: { screen: AuthScreen },
       main: {
